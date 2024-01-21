@@ -13,8 +13,8 @@ test('InValid Login', async ({ page }) => {
         console.log('Langkah 2: Isi formulir login');
 
         // Langkah 2: Isi formulir login
-        await page.type('input[placeholder="Email"][data-v-cecc4608]', 'produktify.id@gmail.com');
-        await page.type('input[placeholder="Password"][data-v-cecc4608]', '654321'); // Password yang salah.
+        await page.type('input[placeholder="Email"][data-v-cecc4608]', 'example@gmail.com'); //isi valid data anda
+        await page.type('input[placeholder="Password"][data-v-cecc4608]', '623144'); // Password yang salah.
 
         // Langkah 3: Mengklik tombol "Login"
         await page.click('button[data-v-cecc4608]', { timeout: 25000 });
@@ -45,8 +45,8 @@ test('Valid Login and Search Product', async ({ page }) => {
         console.log('Langkah 2: Isi formulir login');
 
         // Langkah 2: Isi formulir login
-        await page.type('input[placeholder="Email"][data-v-cecc4608]', 'produktify.id@gmail.com');
-        await page.type('input[placeholder="Password"][data-v-cecc4608]', '123456');
+        await page.type('input[placeholder="Email"][data-v-cecc4608]', '---@gmail.com'); //valid data
+        await page.type('input[placeholder="Password"][data-v-cecc4608]', '---');  // valid data
 
         // Langkah 3: Mengklik tombol "Login"
         await page.click('button[data-v-cecc4608]', { timeout: 25000 });
